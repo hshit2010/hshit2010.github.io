@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshit — Websites That Bring You Clients</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#top" class="nav-logo">Harshit.</a>
+        <div class="nav-links">
+          <a href="#proof">Work</a>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+        </div>
+        <a href="#contact" class="btn-hire">Hire Me</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-mobile" id="mobileMenu">
+        <a href="#proof" onclick="closeMobile()">Work</a>
+        <a href="#services" onclick="closeMobile()">Services</a>
+        <a href="#process" onclick="closeMobile()">Process</a>
+        <a href="#contact" class="btn-hire-mobile" onclick="closeMobile()"
+          >Hire Me</a
+        >
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available · Booking April–May projects
+      </div>
+      <h1 class="hero-headline">
+        Websites That Actually<br />Bring You Clients.
+      </h1>
+      <p class="hero-sub">
+        I build calm, premium websites and run social media that turn quiet
+        brands into booked-out ones. Web development + social management — by
+        one focused hand.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">Get Your Website Built</a>
+        <a href="#proof" class="btn-ghost">View Work</a>
+      </div>
+      <div class="hero-tags">
+        <span class="tag">Live in 7 days</span>
+        <span class="tag">Built for conversion</span>
+        <span class="tag">Hand-crafted</span>
+      </div>
+
+      <!-- Floating card -->
+      <div class="hero-card">
+        <div class="hero-card-browser">
+          <div class="browser-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="browser-url">yourbrand.com</div>
+        </div>
+        <div class="hero-card-body">
+          <div class="hero-card-label">Built to Convert.</div>
+          <div class="hero-card-sub">
+            Designed by Harshit — calm, fast, on-brand.
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-chip green">Live in 7 days</span>
+            <a class="hero-card-btn" href="#contact">Get Quote</a>
+          </div>
+        </div>
+        <div class="hero-card-stats">
+          <div class="stat-item">
+            <span class="stat-label">This week</span>
+            <span class="stat-val">+3 clients booked</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Avg. load</span>
+            <span class="stat-val">0.9s ⚡</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-trust">
+        Loved by founders, creators &amp; small businesses
+      </p>
+    </section>
+
+    <!-- PROOF / TESTIMONIALS MARQUEE -->
+    <section id="proof" class="proof-section">
+      <div class="section-label">Real sites. Real results.</div>
+      <h2 class="section-title">
+        A peek at the kind of work clients keep coming back for.
+      </h2>
+
+      <div class="marquee-wrapper">
+        <div class="marquee-track" id="marqueeTrack">
+          <!-- Card 1 – Cafe -->
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">J</div>
+              <div>
+                <div class="tc-name">John</div>
+                <div class="tc-role">Cafe Owner</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview cafe-preview">
+              <div class="cafe-nav">
+                <strong>Brew &amp; Co.</strong>
+                <div class="cafe-links">
+                  <span>Menu</span><span>Visit</span><span>Order</span>
+                </div>
+              </div>
+              <div class="cafe-hero-text">
+                <div class="cafe-h">Slow coffee.<br />Bright mornings.</div>
+                <div class="cafe-s">Hand-roasted beans, served daily.</div>
+                <a class="cafe-btn">Order Now →</a>
+              </div>
+            </div>
+            <p class="tc-quote">
+              "Walk-ins doubled in the first month. The site just works."
+            </p>
+          </div>
+
+          <!-- Card 2 – Designer -->
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">E</div>
+              <div>
+                <div class="tc-name">Emily</div>
+                <div class="tc-role">Designer</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview portfolio-preview">
+              <div class="port-name">Emily R.<span>Designer</span></div>
+              <div class="port-h">Designs that<br />tell a story.</div>
+            </div>
+            <p class="tc-quote">
+              "Booked 3 new clients in the first week of launch."
+            </p>
+          </div>
+
+          <!-- Card 3 – SaaS -->
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">A</div>
+              <div>
+                <div class="tc-name">Arjun</div>
+                <div class="tc-role">SaaS Founder</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview saas-preview">
+              <div class="saas-nav">
+                <strong>Flowly</strong><span class="saas-try">Try Free</span>
+              </div>
+              <div class="saas-h">Ship faster.<br />Stress less.</div>
+              <div class="saas-s">The all-in-one workspace teams love.</div>
+            </div>
+            <p class="tc-quote">
+              "Clean, fast, and converts. Exactly what we asked for."
+            </p>
+          </div>
+
+          <!-- Card 4 – Coach -->
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">M</div>
+              <div>
+                <div class="tc-name">Mia</div>
+                <div class="tc-role">Coach</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview fitness-preview">
+              <div class="fit-nav">
+                <strong>IRONFIT</strong><span class="fit-join">JOIN</span>
+              </div>
+              <div class="fit-h">Train Hard.<br />Live Strong.</div>
+              <div class="fit-stats">
+                <div class="fit-stat">
+                  <strong>50+</strong><span>Classes</span>
+                </div>
+                <div class="fit-stat">
+                  <strong>24/7</strong><span>Open</span>
+                </div>
+                <div class="fit-stat">
+                  <strong>PRO</strong><span>Coaches</span>
+                </div>
+              </div>
+            </div>
+            <p class="tc-quote">
+              "My signups went from 2 a week to 14. No exaggeration."
+            </p>
+          </div>
+
+          <!-- Card 5 – Restaurant -->
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">R</div>
+              <div>
+                <div class="tc-name">Rohan</div>
+                <div class="tc-role">Restaurateur</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview resto-preview">
+              <div class="resto-nav">
+                <strong>La Maison</strong><span>Reserve →</span>
+              </div>
+              <div class="resto-h">A taste of<br />Provence.</div>
+              <div class="resto-menu">
+                <div><span>Truffle Risotto</span><span>₹890</span></div>
+                <div><span>Duck Confit</span><span>₹1,240</span></div>
+                <div><span>Crème Brûlée</span><span>₹420</span></div>
+              </div>
+            </div>
+            <p class="tc-quote">
+              "Reservations are up. The site finally feels premium."
+            </p>
+          </div>
+
+          <!-- Card 6 – Agency -->
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">D</div>
+              <div>
+                <div class="tc-name">Disha</div>
+                <div class="tc-role">Agency Lead</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview agency-preview">
+              <div class="agency-logo">NORTH.</div>
+              <div class="agency-nav">Work · About · Contact</div>
+              <div class="agency-h">Brands built<br />to be remembered.</div>
+              <div class="agency-s">Strategy, design &amp; growth.</div>
+            </div>
+            <p class="tc-quote">"Harshit gets it. Less talk, more results."</p>
+          </div>
+
+          <!-- Duplicate for infinite scroll -->
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">J</div>
+              <div>
+                <div class="tc-name">John</div>
+                <div class="tc-role">Cafe Owner</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview cafe-preview">
+              <div class="cafe-nav">
+                <strong>Brew &amp; Co.</strong>
+                <div class="cafe-links">
+                  <span>Menu</span><span>Visit</span><span>Order</span>
+                </div>
+              </div>
+              <div class="cafe-hero-text">
+                <div class="cafe-h">Slow coffee.<br />Bright mornings.</div>
+                <div class="cafe-s">Hand-roasted beans, served daily.</div>
+                <a class="cafe-btn">Order Now →</a>
+              </div>
+            </div>
+            <p class="tc-quote">
+              "Walk-ins doubled in the first month. The site just works."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">E</div>
+              <div>
+                <div class="tc-name">Emily</div>
+                <div class="tc-role">Designer</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview portfolio-preview">
+              <div class="port-name">Emily R.<span>Designer</span></div>
+              <div class="port-h">Designs that<br />tell a story.</div>
+            </div>
+            <p class="tc-quote">
+              "Booked 3 new clients in the first week of launch."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">A</div>
+              <div>
+                <div class="tc-name">Arjun</div>
+                <div class="tc-role">SaaS Founder</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview saas-preview">
+              <div class="saas-nav">
+                <strong>Flowly</strong><span class="saas-try">Try Free</span>
+              </div>
+              <div class="saas-h">Ship faster.<br />Stress less.</div>
+              <div class="saas-s">The all-in-one workspace teams love.</div>
+            </div>
+            <p class="tc-quote">
+              "Clean, fast, and converts. Exactly what we asked for."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">M</div>
+              <div>
+                <div class="tc-name">Mia</div>
+                <div class="tc-role">Coach</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview fitness-preview">
+              <div class="fit-nav">
+                <strong>IRONFIT</strong><span class="fit-join">JOIN</span>
+              </div>
+              <div class="fit-h">Train Hard.<br />Live Strong.</div>
+              <div class="fit-stats">
+                <div class="fit-stat">
+                  <strong>50+</strong><span>Classes</span>
+                </div>
+                <div class="fit-stat">
+                  <strong>24/7</strong><span>Open</span>
+                </div>
+                <div class="fit-stat">
+                  <strong>PRO</strong><span>Coaches</span>
+                </div>
+              </div>
+            </div>
+            <p class="tc-quote">
+              "My signups went from 2 a week to 14. No exaggeration."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">R</div>
+              <div>
+                <div class="tc-name">Rohan</div>
+                <div class="tc-role">Restaurateur</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview resto-preview">
+              <div class="resto-nav">
+                <strong>La Maison</strong><span>Reserve →</span>
+              </div>
+              <div class="resto-h">A taste of<br />Provence.</div>
+              <div class="resto-menu">
+                <div><span>Truffle Risotto</span><span>₹890</span></div>
+                <div><span>Duck Confit</span><span>₹1,240</span></div>
+                <div><span>Crème Brûlée</span><span>₹420</span></div>
+              </div>
+            </div>
+            <p class="tc-quote">
+              "Reservations are up. The site finally feels premium."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="tc-reviewer">
+              <div class="tc-avatar">D</div>
+              <div>
+                <div class="tc-name">Disha</div>
+                <div class="tc-role">Agency Lead</div>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+            <div class="tc-preview agency-preview">
+              <div class="agency-logo">NORTH.</div>
+              <div class="agency-nav">Work · About · Contact</div>
+              <div class="agency-h">Brands built<br />to be remembered.</div>
+              <div class="agency-s">Strategy, design &amp; growth.</div>
+            </div>
+            <p class="tc-quote">"Harshit gets it. Less talk, more results."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services-section">
+      <div class="section-label">Services</div>
+      <h2 class="section-title">Two skills. One outcome — growth.</h2>
+
+      <div class="services-grid">
+        <!-- Web Dev Column -->
+        <div class="services-col">
+          <h3 class="services-col-title">Website Development</h3>
+
+          <!-- Full Website Card -->
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Most popular</div>
+            <div class="pricing-name">Full Website</div>
+            <div class="pricing-desc">
+              Frontend + Backend. Built to convert.
+            </div>
+            <div class="pricing-price">₹10,000<span>one-time</span></div>
+            <ul class="pricing-features">
+              <li>Custom design tailored to your brand</li>
+              <li>Frontend + backend (forms, database, admin)</li>
+              <li>Mobile-first, fast &amp; SEO-ready</li>
+              <li>Contact / booking / payment flows</li>
+              <li>Free deployment + 14 days support</li>
+            </ul>
+            <p class="pricing-why">
+              <strong>Why it matters:</strong> A complete site that captures
+              leads, takes payments, and sells for you 24/7.
+            </p>
+            <a href="#contact" class="btn-primary full-width"
+              >Start Full Website</a
+            >
+          </div>
+
+          <!-- Basic Website Card -->
+          <div class="pricing-card">
+            <div class="pricing-name">Basic Website</div>
+            <div class="pricing-desc">Frontend only. Clean, premium, fast.</div>
+            <div class="pricing-price">₹7,000<span>one-time</span></div>
+            <ul class="pricing-features">
+              <li>Custom landing or multi-page design</li>
+              <li>Mobile responsive &amp; polished</li>
+              <li>SEO basics + WhatsApp CTA</li>
+              <li>Free deployment + 7 days support</li>
+            </ul>
+            <p class="pricing-why">
+              <strong>Why it matters:</strong> A pro online presence that builds
+              instant trust and converts visitors into DMs.
+            </p>
+            <a href="#contact" class="btn-outline full-width"
+              >Start Basic Website</a
+            >
+          </div>
+        </div>
+
+        <!-- Social Media Column -->
+        <div class="services-col">
+          <div class="services-col-header">
+            <h3 class="services-col-title">Social Media Management</h3>
+            <a href="social-media-pricing.html" class="services-link">
+              View pricing & plans
+            </a>
+          </div>
+          <div class="social-features">
+            <div class="social-feature">
+              <div class="social-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <div class="social-feat-title">Content Strategy</div>
+                <div class="social-feat-desc">
+                  Monthly calendar, hooks, captions and hashtags built around
+                  what actually moves your audience.
+                </div>
+              </div>
+            </div>
+            <div class="social-feature">
+              <div class="social-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+              </div>
+              <div>
+                <div class="social-feat-title">Posting &amp; Growth</div>
+                <div class="social-feat-desc">
+                  Consistent posting, page hygiene, story scheduling and DM
+                  hygiene so you stay top-of-mind.
+                </div>
+              </div>
+            </div>
+            <div class="social-feature">
+              <div class="social-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4l3 3" />
+                </svg>
+              </div>
+              <div>
+                <div class="social-feat-title">Branding</div>
+                <div class="social-feat-desc">
+                  Tone of voice, visual system and post templates so every piece
+                  feels unmistakably yours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE PREVIEWS -->
+    <section class="previews-section">
+      <div class="section-label">Live previews</div>
+      <h2 class="section-title">A small taste of what I build.</h2>
+      <p class="section-subtitle">
+        Hover the cards. Each preview is a real website, not a screenshot.
+      </p>
+
+      <div class="previews-grid">
+        <!-- Preview Card 1 – Cafe -->
+        <div class="preview-card">
+          <div class="preview-site cafe-full">
+            <div class="cafe-nav cafe-full-nav">
+              <strong>Brew &amp; Co.</strong>
+              <div class="cafe-links">
+                <span>Menu</span><span>Visit</span><span>Order</span>
+              </div>
+            </div>
+            <div class="cafe-full-body">
+              <div class="cafe-h">Slow coffee.<br />Bright mornings.</div>
+              <div class="cafe-s">Hand-roasted beans, served daily.</div>
+              <a class="cafe-btn">Order Now →</a>
+            </div>
+          </div>
+          <div class="preview-footer">
+            <div>
+              <div class="preview-title">Brew &amp; Co.</div>
+              <div class="preview-type">Cafe · Local Business</div>
+            </div>
+            <a href="#contact" class="preview-link">Live preview →</a>
+          </div>
+        </div>
+
+        <!-- Preview Card 2 – SaaS -->
+        <div class="preview-card">
+          <div class="preview-site saas-full">
+            <div class="saas-nav">
+              <strong>Flowly</strong><span class="saas-try">Try Free</span>
+            </div>
+            <div class="saas-full-body">
+              <div class="saas-h">Ship faster.<br />Stress less.</div>
+              <div class="saas-s">The all-in-one workspace teams love.</div>
+            </div>
+          </div>
+          <div class="preview-footer">
+            <div>
+              <div class="preview-title">Flowly</div>
+              <div class="preview-type">SaaS · Product</div>
+            </div>
+            <a href="#contact" class="preview-link">Live preview →</a>
+          </div>
+        </div>
+
+        <!-- Preview Card 3 – Portfolio -->
+        <div class="preview-card">
+          <div class="preview-site portfolio-full">
+            <div class="port-name port-full-name">
+              Emily R.<span>Designer</span>
+            </div>
+            <div class="port-full-body">
+              <div class="port-h">Designs that<br />tell a story.</div>
+            </div>
+          </div>
+          <div class="preview-footer">
+            <div>
+              <div class="preview-title">Emily R.</div>
+              <div class="preview-type">Portfolio</div>
+            </div>
+            <a href="#contact" class="preview-link">Live preview →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="previews-cta">
+        <p>Want something like this? Let's build yours.</p>
+        <a href="#contact" class="btn-primary">Get Your Website Built</a>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="process-section">
+      <div class="section-label">Process</div>
+      <h2 class="section-title">Simple. Stress-free.</h2>
+      <p class="section-subtitle">
+        No agency runaround. Just four clear steps.
+      </p>
+
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <div class="step-title">Discuss</div>
+            <div class="step-desc">
+              Quick call. We map out goals, audience and what success looks
+              like.
+            </div>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <div class="step-title">Design</div>
+            <div class="step-desc">
+              I send a calm, on-brand design within days — no endless revisions.
+            </div>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <div class="step-title">Build</div>
+            <div class="step-desc">
+              I develop, write copy and wire up everything that converts.
+            </div>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <div class="step-title">Launch</div>
+            <div class="step-desc">
+              Live in days. Trained handover so you're never confused.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section id="contact" class="contact-section">
+      <div class="contact-inner">
+        <div class="section-label">Let's make it happen</div>
+        <h2 class="contact-title">Let's Build Your Website.</h2>
+        <p class="contact-sub">
+          One short message. I reply within 24 hours with a clear plan and
+          pricing. No pressure, no fluff.
+        </p>
+
+        <div class="contact-links">
+          <a
+            href="https://wa.me/919875907476?text=Hi%20Harshit%2C%20I%27d%20like%20a%20website"
+            target="_blank"
+            class="contact-btn whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp +91 98759 07476
+          </a>
+          <a href="tel:+919875907476" class="contact-btn phone">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 13.3a16 16 0 006.29 6.29l1.06-1.31a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            +91 98759 07476
+          </a>
+          <a
+            href="https://instagram.com/aboutharshit_kataria_"
+            target="_blank"
+            class="contact-btn instagram">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            @aboutharshit_kataria_
+          </a>
+          <a href="mailto:contact@aboutharshit.info" class="contact-btn email">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            contact@aboutharshit.info
+          </a>
+        </div>
+
+        <p class="contact-trust">
+          Trusted by founders &amp; creators across India, US &amp; Canada.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 Harshit · Websites &amp; Social that pay for themselves.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

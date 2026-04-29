@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Management Pricing — Harshit</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet" />
+    <style>
+      /* =============================================
+         PRICING PAGE — Glassmorphism Dark Theme
+         ============================================= */
+
+      :root {
+        --bg-deep: #050510;
+        --bg-mid: #080818;
+        --glass-bg: rgba(255, 255, 255, 0.04);
+        --glass-bg-2: rgba(255, 255, 255, 0.07);
+        --glass-border: rgba(255, 255, 255, 0.09);
+        --glass-border-h: rgba(100, 180, 255, 0.35);
+        --glow-cyan: #22d3ee;
+        --glow-blue: #6366f1;
+        --glow-purple: #a855f7;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --text-dim: #475569;
+        --white: #ffffff;
+        --radius: 18px;
+        --radius-sm: 10px;
+        --font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        --font-serif: "Instrument Serif", Georgia, serif;
+        --nav-h: 68px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        background: var(--bg-deep);
+        color: var(--text);
+        font-family: var(--font);
+        font-size: 16px;
+        line-height: 1.6;
+        overflow-x: hidden;
+        min-height: 100vh;
+      }
+
+      /* Background gradient atmosphere */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+          radial-gradient(
+            ellipse 80% 60% at 20% -10%,
+            rgba(99, 102, 241, 0.18) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 60% 50% at 80% 110%,
+            rgba(168, 85, 247, 0.14) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 50% 40% at 50% 50%,
+            rgba(34, 211, 238, 0.05) 0%,
+            transparent 70%
+          ),
+          linear-gradient(180deg, #080818 0%, #04040f 100%);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      body > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      ul {
+        list-style: none;
+      }
+
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg-deep);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(99, 102, 241, 0.4);
+        border-radius: 3px;
+      }
+
+      /* =============================================
+         NAV
+         ============================================= */
+      #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: rgba(5, 5, 16, 0.75);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--glass-border);
+      }
+
+      .nav-inner {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 24px;
+        height: var(--nav-h);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .nav-logo {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        background: linear-gradient(135deg, var(--glow-cyan), var(--glow-blue));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .nav-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--text-muted);
+        padding: 7px 16px;
+        border: 1px solid var(--glass-border);
+        border-radius: 100px;
+        background: var(--glass-bg);
+        backdrop-filter: blur(8px);
+        transition: all 0.2s;
+      }
+      .nav-back:hover {
+        color: var(--text);
+        border-color: var(--glass-border-h);
+        transform: translateY(-1px);
+      }
+      .nav-back svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      /* =============================================
+         PAGE HEADER
+         ============================================= */
+      .page-header {
+        padding: calc(var(--nav-h) + 64px) 24px 48px;
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        animation: fadeUp 0.7s ease both;
+      }
+
+      .page-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--glow-cyan);
+        margin-bottom: 20px;
+        background: rgba(34, 211, 238, 0.08);
+        border: 1px solid rgba(34, 211, 238, 0.2);
+        padding: 6px 16px;
+        border-radius: 100px;
+      }
+      .page-label-dot {
+        width: 6px;
+        height: 6px;
+        background: var(--glow-cyan);
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.4;
+          transform: scale(0.8);
+        }
+      }
+
+      .page-title {
+        font-size: clamp(34px, 5.5vw, 58px);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -2px;
+        color: var(--white);
+        margin-bottom: 16px;
+      }
+
+      .page-title span {
+        background: linear-gradient(
+          135deg,
+          var(--glow-cyan) 0%,
+          var(--glow-blue) 50%,
+          var(--glow-purple) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .page-subtitle {
+        font-size: 16px;
+        color: var(--text-muted);
+        max-width: 520px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* =============================================
+         PRICING GRID
+         ============================================= */
+      .pricing-section {
+        padding: 0 24px 80px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-bottom: 60px;
+      }
+
+      /* =============================================
+         PRICING CARD — GLASS
+         ============================================= */
+      .pricing-card {
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        padding: 32px 28px 28px;
+        position: relative;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transition:
+          transform 0.3s ease,
+          border-color 0.3s ease,
+          box-shadow 0.3s ease;
+        overflow: hidden;
+        animation: fadeUp 0.7s ease both;
+      }
+      .pricing-card:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+
+      .pricing-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: var(--radius);
+        background: linear-gradient(
+          135deg,
+          rgba(99, 102, 241, 0.04) 0%,
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-6px) scale(1.01);
+        border-color: rgba(99, 102, 241, 0.4);
+        box-shadow:
+          0 0 0 1px rgba(99, 102, 241, 0.15),
+          0 20px 60px rgba(0, 0, 0, 0.5),
+          0 0 40px rgba(99, 102, 241, 0.1);
+      }
+
+      .pricing-card.featured {
+        background: rgba(99, 102, 241, 0.07);
+        border-color: rgba(99, 102, 241, 0.25);
+        box-shadow:
+          0 0 0 1px rgba(99, 102, 241, 0.15),
+          0 20px 60px rgba(0, 0, 0, 0.4),
+          0 0 60px rgba(99, 102, 241, 0.08);
+      }
+      .pricing-card.featured::before {
+        background: linear-gradient(
+          135deg,
+          rgba(99, 102, 241, 0.08) 0%,
+          rgba(168, 85, 247, 0.04) 100%
+        );
+      }
+      .pricing-card.featured:hover {
+        border-color: rgba(99, 102, 241, 0.55);
+        box-shadow:
+          0 0 0 1px rgba(99, 102, 241, 0.25),
+          0 24px 80px rgba(0, 0, 0, 0.6),
+          0 0 80px rgba(99, 102, 241, 0.18);
+      }
+
+      /* Card glow orb */
+      .pricing-card.featured::after {
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: -40px;
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(
+          circle,
+          rgba(99, 102, 241, 0.2) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+        border-radius: 50%;
+      }
+
+      /* Badge */
+      .pricing-badge {
+        position: absolute;
+        top: -1px;
+        right: 24px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        background: linear-gradient(
+          135deg,
+          var(--glow-blue),
+          var(--glow-purple)
+        );
+        color: white;
+        padding: 5px 14px;
+        border-radius: 0 0 10px 10px;
+      }
+
+      /* Plan tier label */
+      .plan-tier {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--glow-cyan);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .plan-tier.purple {
+        color: var(--glow-purple);
+      }
+      .plan-tier-line {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          rgba(34, 211, 238, 0.3),
+          transparent
+        );
+      }
+      .plan-tier.purple .plan-tier-line {
+        background: linear-gradient(
+          90deg,
+          rgba(168, 85, 247, 0.3),
+          transparent
+        );
+      }
+
+      .plan-name {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: -0.5px;
+        margin-bottom: 6px;
+      }
+
+      .plan-desc {
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .plan-price-block {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        margin-bottom: 28px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--glass-border);
+      }
+
+      .plan-currency {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text-muted);
+      }
+
+      .plan-amount {
+        font-size: 46px;
+        font-weight: 800;
+        letter-spacing: -2px;
+        line-height: 1;
+        color: var(--white);
+      }
+
+      .plan-amount-usd {
+        font-size: 14px;
+        color: var(--text-dim);
+        margin-left: 2px;
+      }
+
+      .plan-period {
+        font-size: 13px;
+        color: var(--text-dim);
+        align-self: flex-end;
+        padding-bottom: 4px;
+      }
+
+      /* Features list */
+      .plan-features {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+
+      .plan-features li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 13.5px;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .feat-check {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: rgba(34, 211, 238, 0.12);
+        border: 1px solid rgba(34, 211, 238, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+      .feat-check svg {
+        width: 10px;
+        height: 10px;
+        color: var(--glow-cyan);
+      }
+
+      .pricing-card.featured .feat-check {
+        background: rgba(99, 102, 241, 0.15);
+        border-color: rgba(99, 102, 241, 0.3);
+      }
+      .pricing-card.featured .feat-check svg {
+        color: #818cf8;
+      }
+
+      /* CTA Button */
+      .plan-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        padding: 14px 24px;
+        border-radius: 100px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .plan-btn-outline {
+        background: transparent;
+        color: var(--text);
+        border: 1px solid var(--glass-border);
+      }
+      .plan-btn-outline:hover {
+        border-color: rgba(34, 211, 238, 0.4);
+        color: var(--glow-cyan);
+        box-shadow:
+          0 0 20px rgba(34, 211, 238, 0.1),
+          inset 0 0 20px rgba(34, 211, 238, 0.03);
+        transform: translateY(-2px);
+      }
+
+      .plan-btn-gradient {
+        background: linear-gradient(
+          135deg,
+          var(--glow-blue) 0%,
+          var(--glow-purple) 100%
+        );
+        color: white;
+        border: none;
+        box-shadow: 0 8px 32px rgba(99, 102, 241, 0.35);
+      }
+      .plan-btn-gradient:hover {
+        transform: translateY(-3px);
+        box-shadow:
+          0 12px 40px rgba(99, 102, 241, 0.5),
+          0 0 60px rgba(168, 85, 247, 0.25);
+      }
+      .plan-btn-gradient::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1) 0%,
+          transparent 50%
+        );
+        border-radius: 100px;
+      }
+
+      /* =============================================
+         ADD-ONS SECTION
+         ============================================= */
+      .addons-section {
+        padding: 0 24px 80px;
+        max-width: 900px;
+        margin: 0 auto;
+        animation: fadeUp 0.7s 0.2s ease both;
+      }
+
+      .addons-header {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      .addons-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--glow-purple);
+        margin-bottom: 12px;
+        background: rgba(168, 85, 247, 0.08);
+        border: 1px solid rgba(168, 85, 247, 0.2);
+        padding: 5px 14px;
+        border-radius: 100px;
+      }
+
+      .addons-title {
+        font-size: clamp(22px, 3.5vw, 32px);
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: -0.8px;
+      }
+
+      .addons-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .addon-item {
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-sm);
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        transition: all 0.25s ease;
+        cursor: default;
+      }
+      .addon-item:hover {
+        border-color: rgba(168, 85, 247, 0.35);
+        background: rgba(168, 85, 247, 0.06);
+        transform: translateY(-3px);
+        box-shadow:
+          0 8px 32px rgba(0, 0, 0, 0.3),
+          0 0 20px rgba(168, 85, 247, 0.08);
+      }
+
+      .addon-name {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .addon-price {
+        font-size: 13px;
+        font-weight: 700;
+        background: linear-gradient(135deg, var(--glow-cyan), var(--glow-blue));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* =============================================
+         CTA SECTION
+         ============================================= */
+      .cta-section {
+        padding: 0 24px 80px;
+        max-width: 900px;
+        margin: 0 auto;
+        animation: fadeUp 0.7s 0.3s ease both;
+      }
+
+      .cta-card {
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        padding: 48px 40px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+
+      .cta-card::before {
+        content: "";
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        height: 200px;
+        background: radial-gradient(
+          ellipse,
+          rgba(99, 102, 241, 0.15) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .cta-title {
+        font-size: clamp(22px, 3.5vw, 32px);
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: -0.8px;
+        margin-bottom: 12px;
+      }
+
+      .cta-sub {
+        font-size: 15px;
+        color: var(--text-muted);
+        line-height: 1.7;
+        max-width: 440px;
+        margin: 0 auto 32px;
+      }
+
+      .cta-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 13px 24px;
+        border-radius: 100px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.25s ease;
+      }
+
+      .cta-btn-primary {
+        background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        color: white;
+        box-shadow: 0 8px 28px rgba(37, 211, 102, 0.3);
+      }
+      .cta-btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45);
+      }
+
+      .cta-btn-ghost {
+        background: var(--glass-bg);
+        color: var(--text);
+        border: 1px solid var(--glass-border);
+        backdrop-filter: blur(8px);
+      }
+      .cta-btn-ghost:hover {
+        border-color: var(--glass-border-h);
+        color: var(--glow-cyan);
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(34, 211, 238, 0.08);
+      }
+
+      .cta-btn svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* =============================================
+         FOOTER
+         ============================================= */
+      .footer {
+        border-top: 1px solid var(--glass-border);
+        padding: 24px;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 13px;
+        color: var(--text-dim);
+      }
+
+      /* =============================================
+         RESPONSIVE
+         ============================================= */
+      @media (max-width: 700px) {
+        .pricing-grid {
+          grid-template-columns: 1fr;
+        }
+        .addons-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .cta-card {
+          padding: 36px 24px;
+        }
+        .page-title {
+          letter-spacing: -1.5px;
+        }
+      }
+      @media (max-width: 480px) {
+        .addons-grid {
+          grid-template-columns: 1fr;
+        }
+        .cta-buttons {
+          flex-direction: column;
+        }
+        .cta-btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Harshit.</a>
+        <a href="index.html" class="nav-back">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+          Back home
+        </a>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="page-label">
+        <span class="page-label-dot"></span>
+        Social Media Management
+      </div>
+      <h1 class="page-title">Plans that <span>grow your page.</span></h1>
+      <p class="page-subtitle">
+        Done-for-you content, captions and posting — built for creators and
+        small businesses ready to look pro online.
+      </p>
+    </div>
+
+    <!-- PRICING CARDS -->
+    <section class="pricing-section">
+      <div class="pricing-grid">
+        <!-- STARTER CARD -->
+        <div class="pricing-card">
+          <div class="plan-tier">
+            Starter
+            <span class="plan-tier-line"></span>
+          </div>
+          <div class="plan-name">Brand Kickstart Plan</div>
+          <div class="plan-desc">
+            For new creators &amp; small businesses who want clean, consistent
+            branding.
+          </div>
+
+          <div class="plan-price-block">
+            <span class="plan-currency">₹</span>
+            <span class="plan-amount">1,499</span>
+            <span class="plan-amount-usd">/ $20</span>
+            <span class="plan-period">per month</span>
+          </div>
+
+          <ul class="plan-features">
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              8 Professionally Designed Static Posts
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              High-Quality Captions (SEO-aligned)
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Brand Tone &amp; Voice Setup
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Mini Hashtag Strategy (10 tailored sets)
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Weekly Content Calendar
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              1 Strategy Call (FREE with Plan)
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              2 Revisions per Post
+            </li>
+          </ul>
+
+          <a
+            href="https://wa.me/919875907476?text=Hi%20Harshit%2C%20I%27m%20interested%20in%20your%20Social%20Media%20Management%20plans"
+            target="_blank"
+            class="plan-btn plan-btn-outline">
+            Choose Starter
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- GROWTH CARD (FEATURED) -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Best Value</div>
+
+          <div class="plan-tier purple">
+            Growth
+            <span class="plan-tier-line"></span>
+          </div>
+          <div class="plan-name">Smart Presence Expansion Plan</div>
+          <div class="plan-desc">
+            For growing businesses that need consistent posting + management.
+          </div>
+
+          <div class="plan-price-block">
+            <span class="plan-currency">₹</span>
+            <span class="plan-amount">3,999</span>
+            <span class="plan-amount-usd">/ $45</span>
+            <span class="plan-period">per month</span>
+          </div>
+
+          <ul class="plan-features">
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              16 High-Quality Static Posts
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Advanced Captions (Story-driven + CTA based)
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Deep Hashtag System (30 sets)
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Full Month Content Calendar
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Posting + Page Hygiene + Story Scheduling
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Basic DM Replies
+            </li>
+            <li>
+              <span class="feat-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              </span>
+              Monthly Performance Report (FREE — normally ₹806)
+            </li>
+          </ul>
+
+          <a
+            href="https://wa.me/919875907476?text=Hi%20Harshit%2C%20I%27m%20interested%20in%20your%20Social%20Media%20Management%20plans"
+            target="_blank"
+            class="plan-btn plan-btn-gradient">
+            Choose Growth
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADD-ONS -->
+    <section class="addons-section">
+      <div class="addons-header">
+        <div class="addons-label">Add-Ons</div>
+        <h2 class="addons-title">Stack on extras when you need them.</h2>
+      </div>
+
+      <div class="addons-grid">
+        <div class="addon-item">
+          <div class="addon-name">Social Media Audit</div>
+          <div class="addon-price">₹499 / $6</div>
+        </div>
+        <div class="addon-item">
+          <div class="addon-name">Additional Post</div>
+          <div class="addon-price">₹150 / $2</div>
+        </div>
+        <div class="addon-item">
+          <div class="addon-name">
+            Complete Brand Refresh (colors, fonts, tone)
+          </div>
+          <div class="addon-price">₹499 / $6</div>
+        </div>
+        <div class="addon-item">
+          <div class="addon-name">Highlight Cover Set</div>
+          <div class="addon-price">₹399 / $5</div>
+        </div>
+        <div class="addon-item">
+          <div class="addon-name">Profile Optimization</div>
+          <div class="addon-price">₹699 / $8</div>
+        </div>
+        <div class="addon-item">
+          <div class="addon-name">Monthly Deep Strategy Report</div>
+          <div class="addon-price">₹999 / $10</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-card">
+        <h2 class="cta-title">Not sure which plan? Let's chat.</h2>
+        <p class="cta-sub">
+          Free 15-min discovery call. I'll recommend the plan that fits your
+          goals — no pressure.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://wa.me/919875907476?text=Hi%20Harshit%2C%20I%27m%20interested%20in%20your%20Social%20Media%20Management%20plans"
+            target="_blank"
+            class="cta-btn cta-btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            WhatsApp Me
+          </a>
+          <a
+            href="https://instagram.com/aboutharshit_kataria_"
+            target="_blank"
+            class="cta-btn cta-btn-ghost">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            @aboutharshit_kataria_
+          </a>
+          <a href="tel:+919875907476" class="cta-btn cta-btn-ghost">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.63a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 13.3a16 16 0 006.29 6.29l1.06-1.31a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            +91 98759 07476
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 Harshit · Websites &amp; Social that pay for themselves.</p>
+    </footer>
+  </body>
+</html>
